@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Academic Corner: Newsletter Archive | Berea College Academic Affairs</title>
+<meta name="description" content="Archive of The Academic Corner, the monthly newsletter of the Office of Academic Affairs at Berea College.">
+
+<!-- ===================================================================
+     THE ACADEMIC CORNER: ARCHIVE LANDING PAGE
+     Published via GitHub Pages. To add an issue, see the block marked
+     "ADD A NEW ISSUE HERE" further down. Nothing else needs to change.
+     =================================================================== -->
+
+<style>
+@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/barlow-400.ttf) format('truetype')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/barlow-700.ttf) format('truetype')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/barlow-condensed-700.ttf) format('truetype')}
+@font-face{font-family:'Newsreader Display';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/newsreader-display-600.ttf) format('truetype')}
+
+:root{
+  --blue:#004175; --deep:#00365d; --light:#49B4EF; --bluegray:#8AAAC5;
+  --green:#7D901E; --gray:#D9D9D4; --tint:#E7F2FB;
+  --ink:#1e242b; --muted:#5a6570;
+  --serif:'Newsreader Display', Georgia, serif;
+  --sans:'Barlow', Verdana, Arial, sans-serif;
+  --cond:'Barlow Condensed','Arial Narrow', sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:#fff; color:var(--ink);
+  font-family:var(--sans); font-size:17px; line-height:1.6;
+}
+
+/* Keyboard access */
+.skip{
+  position:absolute; left:-9999px; top:0; z-index:100;
+  background:#fff; color:var(--blue); padding:12px 18px;
+  font-weight:700; text-decoration:underline;
+}
+.skip:focus{left:8px; top:8px}
+a:focus-visible, .skip:focus-visible{
+  outline:3px solid var(--light); outline-offset:3px; border-radius:2px;
+}
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+
+.wrap{max-width:860px; margin:0 auto; padding:0 24px}
+
+/* Masthead */
+.masthead{background:var(--deep); color:#fff; padding:34px 0 30px}
+.masthead img{display:block; height:44px; width:auto; margin-bottom:22px}
+.masthead h1{
+  font-family:var(--serif); font-weight:600;
+  font-size:clamp(2rem,6vw,3.1rem); line-height:1.08;
+  margin:0 0 10px; color:#fff; letter-spacing:-0.01em;
+}
+.kicker{
+  font-family:var(--cond); text-transform:uppercase; letter-spacing:.11em;
+  font-size:.95rem; color:#BFDBEC; margin:0;
+}
+.rule{height:5px; background:var(--green)}
+
+/* Intro */
+.intro{padding:34px 0 8px}
+.intro p{margin:0 0 14px; max-width:62ch; font-size:1.06rem}
+.intro p:last-child{margin-bottom:0}
+.intro a{color:var(--blue)}
+
+/* Section headings */
+h2{
+  font-family:var(--cond); text-transform:uppercase; letter-spacing:.09em;
+  font-size:1.05rem; color:var(--blue);
+  margin:40px 0 4px; padding-bottom:8px; border-bottom:2px solid var(--gray);
+}
+
+/* Issue list */
+.issues{list-style:none; margin:0; padding:0}
+.issues li{border-bottom:1px solid var(--gray)}
+.issue{display:block; padding:22px 4px; text-decoration:none; color:inherit}
+.issue:hover{background:var(--tint)}
+.issue:hover .issue-title{text-decoration:underline}
+.issue-date{
+  font-family:var(--cond); text-transform:uppercase; letter-spacing:.1em;
+  font-size:.82rem; color:var(--muted); display:block; margin-bottom:5px;
+}
+.issue-title{
+  font-family:var(--serif); font-weight:600; font-size:1.42rem;
+  color:var(--blue); line-height:1.25; display:block; margin-bottom:6px;
+}
+.issue-desc{margin:0; color:var(--ink); max-width:60ch; font-size:1rem}
+.tag{
+  display:inline-block; margin-top:9px; padding:3px 10px;
+  background:var(--light); color:var(--ink);
+  font-family:var(--cond); text-transform:uppercase; letter-spacing:.08em;
+  font-size:.76rem; border-radius:3px;
+}
+
+.empty{color:var(--muted); font-style:italic; padding:18px 4px; margin:0}
+
+/* Footer */
+footer{margin-top:52px; border-top:5px solid var(--green); background:var(--tint); padding:30px 0 26px}
+footer p{margin:0 0 12px; font-size:.97rem; color:var(--ink); max-width:62ch}
+footer a{color:var(--blue)}
+.note{font-size:.85rem; color:var(--muted); border-top:1px solid var(--bluegray); padding-top:14px; margin-top:20px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none !important; animation:none !important}}
+@media print{.skip{display:none} .issue{page-break-inside:avoid}}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to the issue list</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <img src="assets/img/academic-affairs-logo.png" alt="Berea College, Academic Affairs">
+    <h1>The Academic Corner</h1>
+    <p class="kicker">Newsletter Archive &middot; Office of Academic Affairs</p>
+  </div>
+</header>
+<div class="rule"></div>
+
+<div class="wrap intro">
+  <p>The Academic Corner is the monthly newsletter of the Office of Academic Affairs at Berea College. Every issue is kept here, so a link shared today still opens years from now.</p>
+  <p>Issues open in a new tab. To contribute an item to a future issue, use the <a href="https://newsletter-submission-form.vercel.app">contributor submission form</a>.</p>
+</div>
+
+<main id="main" class="wrap">
+
+  <h2>Current issue</h2>
+  <ul class="issues">
+
+    <!-- =============================================================
+         ADD A NEW ISSUE HERE
+         Copy the <li> block below, paste it as the FIRST item in this
+         list, and update the pieces noted underneath it. Move the
+         previous current issue down into the "Past issues" list.
+         Never change a path that has already been published.
+         ============================================================= -->
+
+    <li>
+      <a class="issue" href="issues/2026-08/" target="_blank" rel="noopener">
+        <span class="issue-date">August 2026</span>
+        <span class="issue-title">Teaser Preview</span>
+        <p class="issue-desc">A preview of the newsletter format ahead of the first full issue. Sample content is illustrative and the figures shown are fictitious.</p>
+        <span class="tag">Preview</span>
+        <span class="sr-only">(opens in a new tab)</span>
+      </a>
+    </li>
+
+    <!-- What to change in the block above:
+         1. href .......... issues/YYYY-MM/  (must match the folder you created)
+         2. issue-date .... month and year, spelled out
+         3. issue-title ... the issue title
+         4. issue-desc .... one or two sentences
+         5. tag ........... optional; delete that line for a normal issue -->
+
+  </ul>
+
+  <h2>Past issues</h2>
+  <ul class="issues">
+    <li><p class="empty">Past issues will be listed here as they are published.</p></li>
+  </ul>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Published by the Office of Academic Affairs, Berea College. Questions, corrections, or an item for a future issue: <a href="mailto:smithro@berea.edu">smithro@berea.edu</a>.</p>
+    <p class="note">This archive page was created in collaboration with Claude AI.</p>
+  </div>
+</footer>
+
+</body>
+</html>

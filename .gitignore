@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+._*
+
+# Editor and system noise
+Thumbs.db
+*.tmp
+*~
