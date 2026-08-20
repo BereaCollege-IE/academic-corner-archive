@@ -5,15 +5,16 @@ directory to a live, linkable web page. The files are already built. What
 remains is a repository, a checkbox, and a link on the Academic Affairs page.
 Budget about 20 minutes.
 
-The August teaser preview is installed as a placeholder issue so you can test
-the whole chain before the September issue exists.
+August 2026, Issue No. 1 is published at `issues/2026-08/`. It replaced the
+teaser preview that originally held that path so the whole chain could be tested
+before a real issue existed.
 
 ## What you end up with
 
 | Page | Address |
 |---|---|
 | Archive landing page | `https://bereacollege-ie.github.io/academic-corner-archive/` |
-| August 2026 teaser | `https://bereacollege-ie.github.io/academic-corner-archive/issues/2026-08/` |
+| August 2026, Issue No. 1 | `https://bereacollege-ie.github.io/academic-corner-archive/issues/2026-08/` |
 | September 2026 issue | `https://bereacollege-ie.github.io/academic-corner-archive/issues/2026-09/` |
 
 The pattern holds forever: one folder per issue, named `YYYY-MM`, and the URL is
@@ -156,35 +157,30 @@ submissions, and anything with a name or an email address in it belong in the
 private submissions repository. This is the one real cost of choosing Pages over
 Vercel, and it is entirely manageable as long as the rule stays a rule.
 
-## Three defects in the teaser placeholder
+## Three defects in the teaser placeholder: closed
 
-The teaser was built as a screenshot preview, not as a page meant to be
-published, and it shows in three places. None of them block the setup, and all
-three would matter on a real issue:
+Closed 08-20-2026. The teaser was removed rather than fixed. Issue No. 1 took its
+path, so the three problems it carried are no longer on the site: it had no
+`<h1>`, seven `href="#"` links that went nowhere, and a heading order that
+skipped levels.
 
-1. **No `<h1>`.** The page starts at `<h2>`. A screen reader user landing on the
-   page gets no top-level heading telling them what they are reading.
-2. **Seven dead links.** Every `href="#"` in the teaser goes nowhere. In a
-   screenshot that was invisible. On a published page a reader will click one.
-3. **Heading order skips.** The sequence runs h2, h3, h2, h2, h3, h4, which
-   makes the document outline harder to navigate by headings.
+They are worth keeping in view because they are the three things to check on any
+issue before it ships. Issue No. 1 was checked and clears all three: one `<h1>`
+(the nameplate), no dead links, and a heading sequence of h1 then h2s then h3s
+with nothing skipped. Every one of its eight in-page anchors resolves to a real
+target.
 
-Whether to fix these in the teaser is your call, since it is a placeholder that
-may be replaced in a few weeks anyway. Fixing them in the September template
-before the first real issue ships would be the higher-value move. Say the word
-and it can be done in either place.
+## Brand inconsistency: resolved
 
-## A brand inconsistency worth resolving
+Resolved 08-19-2026. The teaser's palette and typeface set (`#004175` blue,
+Barlow, Newsreader Display, Barlow Condensed) is the correct one. It matches the
+2026 Berea College Brand Toolkit, and `voice-and-style.md` has since been updated
+to the 2026 standards. The older values that appeared here (`#005A8B` Berea Blue,
+Proxima Sera, Proxima Nova) came from the retired 2022 manual and are off-brand.
 
-The teaser uses a palette and typeface set (`#004175` blue, Barlow, Newsreader
-Display, Barlow Condensed) that differ from the standards recorded in your
-`voice-and-style.md` (`#005A8B` Berea Blue, Proxima Sera, Proxima Nova). The
-archive landing page has been built to match the teaser, on the assumption that
-the newsletter is on the current brand and the context file has not caught up.
-
-[Inference] This is based on the teaser's own comment describing itself as using
-the "New Berea College brand," not on a brand document. If that assumption is
-backwards, the landing page palette should change rather than the newsletter.
+The archive landing page already matches the teaser, so no change is needed. Any
+page still carrying the 2022 blue or the Proxima faces should be brought onto the
+2026 palette.
 
 ## Optional: a custom domain
 
@@ -209,7 +205,7 @@ Newsletter Archive Web App/
   .gitignore                        Keeps .DS_Store out of the repository
   assets/fonts/                     Brand fonts, landing page only
   assets/img/                       Academic Affairs logo
-  issues/2026-08/index.html         August teaser placeholder
+  issues/2026-08/index.html         August 2026, Issue No. 1
 ```
 
 Issue files stay fully self-contained, with fonts and images embedded, because
