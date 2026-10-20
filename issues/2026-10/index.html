@@ -323,6 +323,8 @@
   .oh-fig img{border:1px solid var(--gray);}
   .fellows-fig{margin:auto 0 0;padding-top:12px;}
   .fellows-fig img{border:1px solid var(--gray);}
+  @media(max-width:900px){#lead,#events{grid-column:span 12;}#events .eventlist{display:grid;grid-template-columns:1fr 1fr;column-gap:28px;align-content:start;}}
+  @media(max-width:560px){#events .eventlist{grid-template-columns:1fr;}}
   @media(max-width:700px){.oh-fig{width:100%;max-width:100%;}}
 
 </style>
@@ -373,6 +375,9 @@
       <div class="event"><div class="date-tile" style="flex-basis:78px;"><span class="m">Oct</span><span class="d" style="font-size:19px;line-height:1.25;">27 &amp;<br>29</span></div>
         <div><p class="e-hd"><em>The Alignment Problem</em> book discussions</p><p class="e-meta">Oct. 27, 8:15 AM, or Oct. 29, 3:00 PM &#183; Draper 307</p>
         <p>Ahead of Brian Christian's November Convo. <em>(Faculty and staff)</em></p></div></div>
+      <div class="event"><div class="date-tile"><span class="m">Nov</span><span class="d">4</span></div>
+        <div><p class="e-hd">Conversations and Connections with Academic Affairs</p><p class="e-meta">12:00 to 1:15 PM &#183; Legacy Hall Training Room</p>
+        <p>Christopher Miller on place and community. Lunch provided. <a href="#conversations">Details below</a>.</p></div></div>
       <div class="event"><div class="date-tile" style="flex-basis:78px;"><span class="m">Nov</span><span class="d" style="font-size:19px;line-height:1.25;">5, 12,<br>&amp; 19</span></div>
         <div><p class="e-hd">Cheating, Authorship, and Academic Trust webinar series</p><p class="e-meta">2:00 to 3:00 PM Eastern &#183; Virtual</p>
         <p>November's free CIC AI Ready series; one <a href="https://us06web.zoom.us/webinar/register/WN_B3sxdmVwQiakbgqGOafOow">registration</a> covers all three sessions.</p></div></div>
@@ -523,7 +528,19 @@
       </div>
     </section>
 
-    <!-- ROW 9: Academic Affairs Office Hours (12) -->
+    <!-- ROW 9: Conversations and Connections with Academic Affairs (12) -->
+    <article class="block b-white c12" id="conversations">
+      <span class="tag tag-update">Announcement</span>
+      <h2 class="hd-l">Conversations and Connections with Academic Affairs</h2>
+      <p class="byline">Sponsored by the Office for Community &amp; Commitments and the Loyal Jones Appalachian Center</p>
+      <p><strong>Wednesday, November 4th &#183; 12:00 to 1:15 PM &#183; Legacy Hall Training Room &#183; Lunch provided</strong></p>
+      <p>Led by Dr. Christopher Miller, College Curator</p>
+      <div class="cols2">
+        <p>College Curator Christopher Miller will lead an exploration of how the material aspects of places (objects, landscapes, and human bodies) are involved in the emergence of community. The program will feature artifacts from the Appalachian Artifact Teaching Collection and draw from Miller's research with Practice Theory. It will involve a mixture of lecture, storytelling, artifact handling, and conversation. Miller believes that learning to work and study in a world of AI requires people to become more deliberate and thoughtful at engaging the tangible and material world, not because it is better than AI but because we tend to not notice it, like a fish and the water in which it swims.</p>
+      </div>
+    </article>
+
+    <!-- ROW 10: Academic Affairs Office Hours (12) -->
     <article class="block b-light c12" id="office-hours">
       <div class="feathead">
         <div class="aacu-txt">
@@ -539,7 +556,7 @@
       </div>
     </article>
 
-    <!-- ROW 10: call for submissions (12) -->
+    <!-- ROW 11: call for submissions (12) -->
     <article class="block b-white c12" id="submit">
       <span class="tag tag-update">Announcement</span>
       <h2 class="hd-l">Share Your Story in The Academic Corner</h2>
